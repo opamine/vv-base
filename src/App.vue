@@ -1,9 +1,18 @@
+<script setup>
+  import dayjs from 'dayjs';
+  import 'dayjs/locale/zh-cn';
+  import locale from 'ant-design-vue/es/date-picker/locale/zh_CN';
+
+  dayjs.locale('zh-cn');
+</script>
 <template>
-  <div class="nav">
-    <router-link to="/">首页</router-link>
-    <router-link to="/about">关于</router-link>
-  </div>
-  <router-view />
+  <a-config-provider :locale="locale">
+    <div class="nav">
+      <router-link to="/">首页</router-link>
+      <router-link to="/about">关于</router-link>
+    </div>
+    <router-view />
+  </a-config-provider>
 </template>
 <style lang="less" scoped>
   .nav {
