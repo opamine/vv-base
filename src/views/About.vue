@@ -4,20 +4,20 @@
   import { useRoute } from 'vue-router';
   const pageTitle = useRoute().meta.title;
 
-  // 性别选项
+  // 性别选项（按实际需要请求）
   const genderList = [
     { label: '男', value: 'M' },
     { label: '女', value: 'F' },
     { label: '未知', value: 'N' },
   ];
 
-  // 住址列表
+  // 住址列表（按实际需要请求）
   const addressList = [
     { label: '西湖区', value: '西湖区' },
     { label: '滨江区', value: '滨江区' },
   ];
 
-  // 表头
+  // 表头（可写死）
   const columns = [
     {
       title: '姓名', // 输入
@@ -49,7 +49,7 @@
     },
   ];
 
-  // 表格数据
+  // 表格数据（按实际需要请求）
   const dataSource = ref([
     {
       key: 1,
@@ -89,7 +89,7 @@
       ...item,
       birthday: item.birthday?.format('YYYY-MM-DD') ?? '', // 日期需要格式化回去
     }));
-    console.log(dataResult);
+    console.log(dataResult); // 这里是表格数据结果
   };
 </script>
 <template>
