@@ -6,7 +6,8 @@ Node.js v14.0.0+
 
 全局安装 pnpm：npm i pnpm -g
 
-pnpm 安装依赖: pnpm add
+pnpm 安装所有依赖: pnpm i
+pnpm 安装指定依赖: pnpm add
 
 ## 启动项目
 
