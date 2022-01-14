@@ -6,6 +6,7 @@ specifiers:
   axios: ^0.24.0
   dayjs: ^1.10.7
   less: ^4.1.2
+  prettier: 2.5.1
   unplugin-vue-components: ^0.17.11
   vite: ^2.7.2
   vue: ^3.2.25
@@ -23,6 +24,7 @@ dependencies:
 devDependencies:
   '@vitejs/plugin-vue': 2.0.1_vite@2.7.10+vue@3.2.26
   less: 4.1.2
+  prettier: 2.5.1
   unplugin-vue-components: 0.17.11_vite@2.7.10+vue@3.2.26
   vite: 2.7.10_less@4.1.2
 
@@ -805,6 +807,12 @@ packages:
       nanoid: 3.1.30
       picocolors: 1.0.0
       source-map-js: 1.0.1
+
+  /prettier/2.5.1:
+    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /prr/1.0.1:
     resolution: {integrity: sha1-0/wRS6BplaRexok/SEzrHXj19HY=}

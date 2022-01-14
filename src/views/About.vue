@@ -98,11 +98,19 @@
     <div style="margin-bottom: 12px"
       ><a-button type="primary" @click="handleAdd">新增</a-button></div
     >
-    <a-table :dataSource="dataSource" :columns="columns" :pagination="false" bordered>
+    <a-table
+      :dataSource="dataSource"
+      :columns="columns"
+      :pagination="false"
+      bordered
+    >
       <template #bodyCell="{ column, text, record }">
         <template v-if="column.key === 'name'">
           <div
-            ><a-input v-model:value="record[column.dataIndex]" placeholder="请输入姓名"></a-input
+            ><a-input
+              v-model:value="record[column.dataIndex]"
+              placeholder="请输入姓名"
+            ></a-input
           ></div>
         </template>
         <template v-if="column.key === 'gender'">
@@ -134,14 +142,18 @@
           ></div>
         </template>
         <template v-if="column.key === 'action'">
-          <span style="color: #ff7875; cursor: pointer" @click="handleDelete(record.key)"
+          <span
+            style="color: #ff7875; cursor: pointer"
+            @click="handleDelete(record.key)"
             >删除</span
           >
         </template>
       </template>
     </a-table>
     <div style="text-align: center; margin-top: 12px"
-      ><a-button @click="handleSave" type="primary" size="large">保存</a-button></div
+      ><a-button @click="handleSave" type="primary" size="large"
+        >保存</a-button
+      ></div
     >
   </div>
 </template>
