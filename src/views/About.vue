@@ -104,14 +104,13 @@
       :pagination="false"
       bordered
     >
-      <template #bodyCell="{ column, text, record }">
+      <template #bodyCell="{ column, record }">
         <template v-if="column.key === 'name'">
           <div
             ><a-input
               v-model:value="record[column.dataIndex]"
               placeholder="请输入姓名"
-            ></a-input
-          ></div>
+          /></div>
         </template>
         <template v-if="column.key === 'gender'">
           <div
@@ -120,16 +119,14 @@
               :options="genderList"
               placeholder="请选择性别"
               style="width: 100%"
-            ></a-select
-          ></div>
+          /></div>
         </template>
         <template v-if="column.key === 'birthday'">
           <div
             ><a-date-picker
               v-model:value="record[column.dataIndex]"
               placeholder="请选择日期"
-            ></a-date-picker
-          ></div>
+          /></div>
         </template>
         <template v-if="column.key === 'address'">
           <div
@@ -138,8 +135,7 @@
               :options="addressList"
               placeholder="请选择住址"
               style="width: 100%"
-            ></a-select
-          ></div>
+          /></div>
         </template>
         <template v-if="column.key === 'action'">
           <span

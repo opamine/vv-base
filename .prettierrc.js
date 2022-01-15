@@ -8,7 +8,7 @@ module.exports = {
   jsxSingleQuote: true, // 在 JSX 中使用单引号而不是双引号
   trailingComma: 'es5', // 尽可能控制尾随逗号的输出。 有效选项: "none" - 无尾随逗号; "es5" - 在 ES5 中有效的尾随逗号（对象，数组等）; "all" - 尽可能尾随逗号（包括函数参数）
   bracketSpacing: true, // 控制对象字面量的空格输出
-  jsxBracketSameLine: true, // 如果为 true，则将多行 jsx 元素的 > 放在最后一行的末尾，而不是单独放在下一行
+  bracketSameLine: false, // 将多行 HTML（HTML、JSX、Vue、Angular）元素的 > 放在最后一行的末尾，而不是单独放在下一行（不适用于自闭合元素）。
   arrowParens: 'always', // 当箭头函数仅有一个参数时加上括号: "always" || "avoid"
   vueIndentScriptAndStyle: true, // 是否缩进 Vue 文件中 <script> 和 <style> 标记内的代码。 有些人（比如 Vue 的创建者）不通过缩进来保存缩进级别，但这可能会破坏编辑器中的代码折叠。
   requirePragma: false, // Prettier 可以将自己限制为仅格式化文件顶部包含特殊注释（称为 pragma）的文件。 这在将大型、未格式化的代码库逐渐转换为 prettier 时非常有用。

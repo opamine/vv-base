@@ -34,7 +34,7 @@ const store = createStore({
   actions: {
     // 异步更改 state 中的数据
     asyncIncrement(context, payload) {
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve, _reject) => {
         setTimeout(() => {
           context.commit('increment', payload);
           resolve(payload);
