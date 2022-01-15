@@ -1,9 +1,1 @@
-/dist/*
-/build/*
-/public/*
-
-.local
-.output.js
-
-**/*.svg
-**/*.sh
+dist
