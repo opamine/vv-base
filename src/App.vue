@@ -12,13 +12,16 @@
 </template>
 <style lang="less" scoped>
   .nav {
-    background-color: #515151;
     text-align: center;
+    background-color: #515151;
+    width: 100px;
+
     a {
       margin: 0 8px;
       color: #fff;
+
       &.router-link-active {
-        color: rgb(163, 163, 255);
+        color: rgb(163 163 255);
       }
     }
   }
