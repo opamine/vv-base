@@ -16,5 +16,5 @@ module.exports = {
   proseWrap: 'never', // （Markdown）将散文包含在多行中: "always" || "never" || "preserve"
   htmlWhitespaceSensitivity: 'strict', // 指定HTML文件的全局空白区域敏感度。 有效选项： "css" - 尊重 CSS 显示属性的默认值; "strict" - 空格被认为是敏感的; "ignore" - 空格被认为是不敏感的。
   embeddedLanguageFormatting: 'auto', // 控制是否将 Prettier 格式的带引号的代码嵌入到文件中: "auto" || "off"
-  endOfLine: 'auto',
+  endOfLine: 'auto', // 指定 prettier 的换行符（各个操作系统表现不一致，建议使用 "auto"）
 };
