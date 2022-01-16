@@ -33,8 +33,8 @@
 <style lang="less" scoped>
   .title {
     padding-bottom: 12px;
-    border-bottom: 1px solid #eee;
     font-size: 24px;
+    border-bottom: 1px solid #eee;
     text-align: center;
   }
 </style>
