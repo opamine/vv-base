@@ -1,7 +1,7 @@
 module.exports = {
   printWidth: 100, // 指定每行代码的最佳长度， 如果超出长度则换行。
   useTabs: false, // 使用制表符（tab）缩进
-  tabWidth: 2, // 每个制表符（tab）占用的空格数
+  tabWidth: 2, // 每个缩进级别的空格数
   semi: true, // 是否在每行末尾添加分号
   singleQuote: true, // 如果为 true，将优先使用单引号而不是双引号
   quoteProps: 'as-needed', // 更改对象中属性的括号: "as-needed" - 如果需要，则为属性添加引号; "consistent" - 如果对象中有一个属性需要引号，则为所有属性添加引号; "preserve" - 不强求，尊重你的写法
