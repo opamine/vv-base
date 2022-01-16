@@ -9,12 +9,8 @@
 
   const count = computed(() => store.state.count);
   const twoMultipleCount = computed(() => store.getters.twoMultipleCount);
-  const twoMultipleCountAddOne = computed(
-    () => store.getters.twoMultipleCountAddOne
-  );
-  const twoMultipleCountAddN = computed(() =>
-    store.getters.twoMultipleCountAddN(4)
-  );
+  const twoMultipleCountAddOne = computed(() => store.getters.twoMultipleCountAddOne);
+  const twoMultipleCountAddN = computed(() => store.getters.twoMultipleCountAddN(4));
 
   const handleAdd = () => {
     store.commit('increment', 1);

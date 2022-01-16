@@ -1,5 +1,5 @@
 module.exports = {
-  printwidth: 100, // 指定每行代码的最佳长度， 如果超出长度则换行。
+  printWidth: 100, // 指定每行代码的最佳长度， 如果超出长度则换行。
   useTabs: false, // 使用制表符（tab）缩进
   tabWidth: 2, // 每个制表符（tab）占用的空格数
   semi: true, // 是否在每行末尾添加分号
@@ -16,5 +16,5 @@ module.exports = {
   proseWrap: 'never', // （Markdown）将散文包含在多行中: "always" || "never" || "preserve"
   htmlWhitespaceSensitivity: 'strict', // 指定HTML文件的全局空白区域敏感度。 有效选项： "css" - 尊重 CSS 显示属性的默认值; "strict" - 空格被认为是敏感的; "ignore" - 空格被认为是不敏感的。
   embeddedLanguageFormatting: 'auto', // 控制是否将 Prettier 格式的带引号的代码嵌入到文件中: "auto" || "off"
-  withNodeModules: false, // 是否处理 node_modules 中的文件
+  endOfLine: 'auto',
 };
