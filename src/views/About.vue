@@ -94,8 +94,8 @@
 </script>
 <template>
   <div>{{ pageTitle }}</div>
-  <div style="padding: 24px;">
-    <div style="margin-bottom: 12px;"
+  <div :style="{ padding: '24px' }">
+    <div :style="{ 'margin-bottom': '12px' }"
       ><a-button type="primary" @click="handleAdd">新增</a-button></div
     >
     <a-table :dataSource="dataSource" :columns="columns" :pagination="false" bordered>
@@ -109,7 +109,7 @@
               v-model:value="record[column.dataIndex]"
               :options="genderList"
               placeholder="请选择性别"
-              style="width: 100%;"
+              :style="{ width: '100%' }"
           /></div>
         </template>
         <template v-if="column.key === 'birthday'">
@@ -123,17 +123,17 @@
               v-model:value="record[column.dataIndex]"
               :options="addressList"
               placeholder="请选择住址"
-              style="width: 100%;"
+              :style="{ width: '100%', height: '100px' }"
           /></div>
         </template>
         <template v-if="column.key === 'action'">
-          <span style="color: #ff7875; cursor: pointer;" @click="handleDelete(record.key)"
+          <span :style="{ color: '#ff7875', cursor: 'pointer' }" @click="handleDelete(record.key)"
             >删除</span
           >
         </template>
       </template>
     </a-table>
-    <div style="margin-top: 12px; text-align: center;"
+    <div :style="{ 'margin-top': '12px', 'text-align': 'center' }"
       ><a-button @click="handleSave" type="primary" size="large">保存</a-button></div
     >
   </div>

@@ -21,9 +21,6 @@ specifiers:
   prettier: 2.5.1
   rimraf: ^3.0.2
   stylelint: ^14.2.0
-  stylelint-config-html: ^1.0.0
-  stylelint-config-prettier: ^9.0.3
-  stylelint-config-recommended: ^6.0.0
   stylelint-config-standard: ^24.0.0
   stylelint-order: ^5.0.0
   unplugin-vue-components: ^0.17.11
@@ -58,9 +55,6 @@ devDependencies:
   prettier: 2.5.1
   rimraf: 3.0.2
   stylelint: 14.2.0
-  stylelint-config-html: 1.0.0_2d1bcf73d0f2e8e613ccd6d821b0344f
-  stylelint-config-prettier: 9.0.3_stylelint@14.2.0
-  stylelint-config-recommended: 6.0.0_stylelint@14.2.0
   stylelint-config-standard: 24.0.0_stylelint@14.2.0
   stylelint-order: 5.0.0_stylelint@14.2.0
   unplugin-vue-components: 0.17.11_vite@2.7.12+vue@3.2.26
@@ -2883,27 +2877,6 @@ packages:
 
   /style-search/0.1.0:
     resolution: {integrity: sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=}
-    dev: true
-
-  /stylelint-config-html/1.0.0_2d1bcf73d0f2e8e613ccd6d821b0344f:
-    resolution: {integrity: sha512-rKQUUWDpaYC7ybsS6tLxddjn6DxhjSIXybElSmcTyVQj3ExhmU3q+l41ktrlwHRyY0M5SkTkZiwngvYPYmsgSQ==}
-    engines: {node: ^12 || >=14}
-    peerDependencies:
-      postcss-html: ^1.0.0
-      stylelint: '>=14.0.0'
-    dependencies:
-      postcss-html: 1.3.0
-      stylelint: 14.2.0
-    dev: true
-
-  /stylelint-config-prettier/9.0.3_stylelint@14.2.0:
-    resolution: {integrity: sha512-5n9gUDp/n5tTMCq1GLqSpA30w2sqWITSSEiAWQlpxkKGAUbjcemQ0nbkRvRUa0B1LgD3+hCvdL7B1eTxy1QHJg==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    peerDependencies:
-      stylelint: '>=11.0.0'
-    dependencies:
-      stylelint: 14.2.0
     dev: true
 
   /stylelint-config-recommended/6.0.0_stylelint@14.2.0:
