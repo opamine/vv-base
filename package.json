@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "lint:eslint": "eslint \"src/**/*.{vue,js,jsx}\" --cache --cache-location node_modules/.cache/eslint/ --max-warnings 0 --fix",
     "lint:prettier": "prettier --write  \"src/**/*.{js,json,css,less,vue,html,md}\"",
-    "lint:stylelint": "stylelint \"**/*.{vue,less,postcss,css}\" --cache --cache-location node_modules/.cache/stylelint/ --fix --custom-syntax postcss-html",
+    "lint:stylelint": "stylelint \"**/*.{css,less,html,vue}\" --cache --cache-location node_modules/.cache/stylelint/ --fix",
     "lint:lint-staged": "lint-staged",
     "prepare": "husky install"
   },
