@@ -9,7 +9,8 @@ indent_style = space
 # 缩进空格数：2
 indent_size = 2
 # 换行符 lf
-# end_of_line = lf 考虑到操作系统差异，暂时去除此项配置，参见 https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties - end_of_line
+# 参考 https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties - end_of_line
+end_of_line = lf
 # 是否删除行尾的空格
 trim_trailing_whitespace = true
 # 是否在文件的最后插入一个空行
