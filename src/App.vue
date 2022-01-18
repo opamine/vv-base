@@ -14,7 +14,6 @@
   .nav {
     text-align: center;
     background-color: #515151;
-    width: 100px;
 
     a {
       margin: 0 8px;
