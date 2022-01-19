@@ -123,7 +123,7 @@
               v-model:value="record[column.dataIndex]"
               :options="addressList"
               placeholder="请选择住址"
-              :style="{ width: '100%', height: '100px' }"
+              :style="{ width: '100%' }"
           /></div>
         </template>
         <template v-if="column.key === 'action'">
