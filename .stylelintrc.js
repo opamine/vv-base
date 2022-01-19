@@ -99,6 +99,7 @@ module.exports = {
       'resize',
       'transition',
     ],
+    'string-quotes': 'single', // stylelint-config-standard 中配置的是 'double', prettier 中配置 'single', 手动以 prettier 为准
   },
   overrides: [
     {
