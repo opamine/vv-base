@@ -2,6 +2,7 @@
   import { computed } from 'vue';
   import { useStore } from 'vuex';
   import { useRoute } from 'vue-router';
+  import { convertEnvVars } from '../utils/index';
 
   const store = useStore();
 
@@ -19,6 +20,8 @@
   const handleSyncAdd = () => {
     store.dispatch('asyncIncrement', 2);
   };
+
+  console.log(convertEnvVars(import.meta.env));
 </script>
 <template>
   <div>{{ pageTitle }}</div>
