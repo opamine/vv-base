@@ -22,6 +22,7 @@ module.exports = {
         varsIgnorePattern: '^_',
       },
     ],
+    'vue/v-on-event-hyphenation': ['error', 'never', { autofix: true, ignore: [] }],
     'vue/script-setup-uses-vars': 'error',
     'vue/custom-event-name-casing': 'off',
     'vue/attributes-order': 'off',
