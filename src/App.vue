@@ -9,21 +9,25 @@
     <div class="nav">
       <router-link to="/">首页</router-link>
       <router-link to="/about">关于</router-link>
+      <router-link to="/aes">AES</router-link>
     </div>
     <router-view />
   </a-config-provider>
 </template>
 <style lang="less" scoped>
   .nav {
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: 600;
     text-align: center;
-    background-color: #515151;
+    background-color: #24292f;
 
     a {
       margin: 0 8px;
       color: #fff;
 
       &.router-link-active {
-        color: rgb(163 163 255);
+        color: #409aff;
       }
     }
   }

@@ -8,6 +8,7 @@ specifiers:
   ant-design-vue: 3.0.0-beta.7
   autoprefixer: ^10.4.2
   axios: ^0.24.0
+  crypto-js: ^4.1.1
   dayjs: ^1.10.7
   eslint: ^8.6.0
   eslint-config-prettier: ^8.3.0
@@ -34,6 +35,7 @@ specifiers:
 dependencies:
   ant-design-vue: 3.0.0-beta.7_vue@3.2.26
   axios: 0.24.0
+  crypto-js: 4.1.1
   dayjs: 1.10.7
   vite-plugin-compression: 0.5.1_vite@2.7.12
   vue: 3.2.26
@@ -1303,6 +1305,10 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /crypto-js/4.1.1:
+    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
+    dev: false
 
   /cssesc/3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
