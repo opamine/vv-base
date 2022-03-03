@@ -128,6 +128,7 @@ module.exports = {
             ignorePseudoClasses: ['deep', 'slotted', 'global'],
           },
         ],
+        'declaration-block-trailing-semicolon': null, // 详见: https://www.cnblogs.com/OwenLin/p/14990993.html
       },
     },
   ],
