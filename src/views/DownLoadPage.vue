@@ -10,23 +10,27 @@
     const iframe = document.createElement('iframe');
     iframe.setAttribute('style', 'position:absolute;width:0px;height:0px;left:-500px;top:-500px;');
     document.body.appendChild(iframe);
-    // 调用 document.open 方法准备写入
+    // 调用 iframe.contentDocument.open 方法准备写入
     iframe.contentDocument.open();
     // 将需要局部打印的内容渲染到 iframe 中
     iframe.contentDocument.write(printContentHtml);
     // 修改 document.title 来控制下载文件名
-    iframe.contentDocument.title = fileName;
+    // 做个 title 备份，打印完毕以后还原 document.title
+    const backupTitle = document.title;
+    window.document.title = fileName;
     // 创建 iframe 内置文档的 style 标签，添加自定义样式
     const styleSheet = iframe.contentDocument.createElement('style');
     styleSheet.innerText =
       '@page{size:auto;margin:0}.content{font-size:14px;text-align:center}table{width:100%;border:1px solid #000;border-spacing:0;text-align:center;table-layout:fixed;word-break:break-all}tbody tr td{padding:8px;border-right:1px solid #000;border-bottom:1px solid #000}tbody tr td:last-child{border-right:none}tbody tr:first-child td{border-top:none}tbody tr:last-child td{border-bottom:none}';
     iframe.contentDocument.getElementsByTagName('head')[0].appendChild(styleSheet);
-    // 由 document.open 方法打开的输出流，并显示选定的数据
+    // 由 iframe.contentDocument.open 方法打开的输出流，并显示选定的数据
     iframe.contentDocument.close();
     // 调用 iframe 内置 window 对象的 print 方法
     iframe.contentWindow.print();
     // 移除创建的 iframe
     document.body.removeChild(iframe);
+    // 还原 document.title
+    document.title = backupTitle;
   };
 
   // eslint-disable-next-line no-unused-vars
