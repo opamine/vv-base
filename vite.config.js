@@ -49,6 +49,13 @@ export default defineConfig(({ command, mode }) => {
         },
       ],
     },
+    css: {
+      preprocessorOptions: {
+        less: {
+          javascriptEnabled: true,
+        },
+      },
+    },
     build: {
       minify: false,
       // target: 'es2015',
