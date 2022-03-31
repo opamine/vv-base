@@ -56,21 +56,29 @@ export default defineConfig(({ command, mode }) => {
         },
       },
     },
+    server: {
+      host: true,
+      port: 3000,
+      open: true,
+    },
     build: {
-      minify: false,
-      // target: 'es2015',
-      // cssTarget: 'chrome86',
+      minify: 'terser',
       outDir: OUTPUT_DIR,
+      // when: build.minify === 'terser'
       terserOptions: {
         compress: {
           keep_infinity: true,
-          // Used to delete console in production environment
           drop_console: VITE_DROP_CONSOLE,
         },
       },
       // Turning off brotliSize display can slightly reduce packaging time
-      brotliSize: false,
+      reportCompressedSize: false,
       chunkSizeWarningLimit: 2000,
+    },
+    preview: {
+      host: true,
+      port: 8000,
+      open: true,
     },
   };
 });
