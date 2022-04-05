@@ -1,10 +1,10 @@
 <script setup>
   import { useRoute } from 'vue-router';
-  import demo from '@/api/demo';
+  import $api from '@/api';
   const pageTitle = useRoute().meta.title;
 
   const http = () => {
-    demo.getTodayPoetry({ name: 1 }).then((res) => {
+    $api.demo.getTodayPoetry({ name: 1 }).then((res) => {
       console.log(res);
     });
   };
