@@ -58,7 +58,7 @@ export default defineConfig(({ command, mode }) => {
     },
     server: {
       host: true,
-      port: 3000,
+      port: 8080,
       open: true,
     },
     build: {
