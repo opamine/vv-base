@@ -11,11 +11,12 @@
       :autoplay="{
         delay: 3000,
       }"
+      :speed="600"
       :coverflow-effect="{
         rotate: 0,
         stretch: 0,
         depth: 80,
-        modifier: 6,
+        modifier: 8,
         slideShadows: true,
       }"
       :loop="true"
@@ -52,7 +53,7 @@
   .swiper-container {
     overflow: hidden;
     margin: 30px auto 0;
-    width: 1000px;
+    width: 1100px;
   }
 
   :deep(.swiper) {
