@@ -1,15 +1,15 @@
 <template>
-  <div>{{ pageTitle }}</div>
   <div class="swiper-container">
     <swiper
       :effect="'coverflow'"
       :grabCursor="true"
-      :slides-per-view="1"
-      :spaceBetween="30"
+      :spaceBetween="-100"
       :centeredSlides="true"
       :slidesPerView="'auto'"
       :autoplay="{
         delay: 3000,
+        disableOnInteraction: false, // 鼠标操作后停止轮播
+        pauseOnMouseEnter: true, // 鼠标进入暂停
       }"
       :speed="600"
       :coverflow-effect="{
@@ -21,11 +21,12 @@
       }"
       :loop="true"
       :modules="modules"
+      direction="horizontal"
       class="mySwiper"
     >
-      <swiper-slide v-for="item in imgAssetsUrl" :key="item"
-        ><img :src="item" style="width: 600px; height: 300px; object-fit: cover"
-      /></swiper-slide>
+      <swiper-slide v-for="item in imgAssetsUrl" :key="item">
+        <img :src="item" style="width: 600px; height: 300px; object-fit: cover" />
+      </swiper-slide>
     </swiper>
   </div>
 </template>
@@ -38,46 +39,25 @@
   const imgUrls = ['01', '02', '03', '04'];
   const imgAssetsUrl = imgUrls.map((item) => '../src/assets/swiper/swiper' + item + '.png');
 
-  console.log(imgAssetsUrl);
-
   const modules = [Autoplay, EffectCoverflow];
 </script>
-<style lang="css" scoped>
-  .title {
-    padding-bottom: 12px;
-    font-size: 24px;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-  }
-
+<style lang="less" scoped>
   .swiper-container {
-    overflow: hidden;
+    // overflow: hidden;
     margin: 30px auto 0;
-    width: 1100px;
-  }
 
-  :deep(.swiper) {
-    overflow: visible;
-    width: 600px;
-    height: 300px;
-  }
-
-  :deep(.swiper-slide) {
-    background-color: #eee;
-  }
-
-  /* .swiper-slide {
-    background-color: #eee;
-  } */
-
-  /* :deep(.swiper-slide-active) {
-    transition: all 0.4s;
-  } */
-  :deep(.swiper-slide-prev) {
-    transition: all 0.4s;
-  }
-
-  :deep(.swiper-slide-next) {
-    transition: all 0.4s;
+    :deep(.swiper) {
+      overflow: visible;
+      width: 600px;
+      height: 300px;
+      // .swiper-slide {
+      //   &.swiper-slide-prev {
+      //   }
+      //   &.swiper-slide-active {
+      //   }
+      //   &.swiper-slide-next {
+      //   }
+      // }
+    }
   }
 </style>
