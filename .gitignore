@@ -2,4 +2,3 @@ node_modules
 dist
 dist_electron
 .pnpm-debug.log
-pnpm-lock.yaml
