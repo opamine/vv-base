@@ -117,6 +117,9 @@ module.exports = {
     {
       files: ['*.html', '**/*.html'],
       customSyntax: 'postcss-html',
+      rules: {
+        'declaration-block-trailing-semicolon': null, // 详见: https://www.cnblogs.com/OwenLin/p/14990993.html
+      },
     },
     {
       files: ['*.vue', '**/*.vue'],
