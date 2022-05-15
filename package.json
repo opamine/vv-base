@@ -64,7 +64,7 @@
       "prettier --write",
       "stylelint --fix"
     ],
-    "*.{less,scss,styl,html}": [
+    "*.{less,html}": [
       "stylelint --fix",
       "prettier --write"
     ],
