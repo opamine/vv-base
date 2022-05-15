@@ -99,6 +99,13 @@ module.exports = {
       'resize',
       'transition',
     ],
+    indentation: null, // 与 prettier 冲突，以 prettier 为准
+    'declaration-colon-newline-after': null, // 与 prettier 冲突，以 prettier 为准
+    'value-list-comma-newline-after': null, // 与 prettier 冲突，以 prettier 为准
+    'font-family-no-missing-generic-family-keyword': null, // 与 prettier 冲突，以 prettier 为准
+    'no-descending-specificity': null, // 权重书写与样式书写顺序不做关联
+    'function-no-unknown': null, // 不做函数校验
+    'selector-class-pattern': null, // 即使关闭类名校验，请优先使用 'lowercase-lowercase' 格式
     'string-quotes': 'single', // stylelint-config-standard 中配置的是 'double', prettier 中配置 'single', 手动以 prettier 为准
   },
   overrides: [
