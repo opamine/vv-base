@@ -6,20 +6,20 @@ const routes = [
   { path: '/', name: 'home', component: Home, meta: { title: '首页' } },
   {
     path: '/alarm',
-    nameL: 'alarm',
+    nameL: 'Alarm',
     component: Layout,
     children: [
       {
         path: 'list',
-        name: 'alarmList',
+        name: 'AlarmList',
         component: () => import('@/views/Alarm/List.vue'),
         meta: { keepAlive: true },
       },
       {
         path: 'detail',
-        name: 'alarmDetail',
+        name: 'AlarmDetail',
         component: () => import('@/views/Alarm/Detail.vue'),
-        meta: { keepAlive: true },
+        meta: { keepAlive: false },
       },
     ],
   },
