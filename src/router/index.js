@@ -1,10 +1,28 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from '../views/Home.vue';
-import Aes from '../views/Aes.vue';
+import Layout from '@/components/Layout.vue';
 
 const routes = [
   { path: '/', name: 'home', component: Home, meta: { title: '首页' } },
-  { path: '/aes', name: 'aes', component: Aes, meta: { title: 'AES' } },
+  {
+    path: '/alarm',
+    nameL: 'alarm',
+    component: Layout,
+    children: [
+      {
+        path: 'list',
+        name: 'alarmList',
+        component: () => import('@/views/Alarm/List.vue'),
+        meta: { keepAlive: true },
+      },
+      {
+        path: 'detail',
+        name: 'alarmDetail',
+        component: () => import('@/views/Alarm/Detail.vue'),
+        meta: { keepAlive: true },
+      },
+    ],
+  },
 ];
 
 const router = createRouter({

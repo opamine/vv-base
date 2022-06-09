@@ -13,5 +13,3 @@ pnpm 安装指定依赖: pnpm add
 ## 启动项目
 
 npm run dev
-
-![as](https://dbaeumer.gallerycdn.vsassets.io/extensions/dbaeumer/vscode-eslint/2.2.3/1642067257652/Microsoft.VisualStudio.Services.Icons.Default)

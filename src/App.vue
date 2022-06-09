@@ -1,18 +1,19 @@
+<template>
+  <a-config-provider :locale="zhCN">
+    <div class="nav">
+      <router-link to="/">首页</router-link>
+      <router-link to="/alarm/list">告警列表</router-link>
+      <router-link to="/alarm/detail">告警详情</router-link>
+    </div>
+    <router-view />
+  </a-config-provider>
+</template>
 <script setup>
   import zhCN from 'ant-design-vue/es/locale/zh_CN';
   import dayjs from 'dayjs';
   import 'dayjs/locale/zh-cn';
   dayjs.locale('zh-cn');
 </script>
-<template>
-  <a-config-provider :locale="zhCN">
-    <div class="nav">
-      <router-link to="/">首页</router-link>
-      <router-link to="/aes">AES</router-link>
-    </div>
-    <router-view />
-  </a-config-provider>
-</template>
 <style lang="less" scoped>
   .nav {
     padding: 16px 32px;
