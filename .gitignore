@@ -1,14 +1,11 @@
+# base
 node_modules
-.DS_Store
 dist
-.npmrc
-.cache
+.DS_Store
 
-.local
 # local env files
 .env.local
 .env.*.local
-.eslintcache
 
 # Log files
 npm-debug.log*
@@ -16,16 +13,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
-.idea
-
-# .vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
+# package manager lockfiles
 package-lock.json
 yarn-lock.json
 pnpm-lock.yaml
