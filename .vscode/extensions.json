@@ -1,3 +1,26 @@
 {
-  "recommendations": ["johnsoncodehk.volar"]
+  "recommendations": [
+    "techer.open-in-browser", // open in browser
+    "ritwickdey.liveserver", // Live Server
+    "formulahendry.code-runner", // Code Runner
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig", // EditorConfig for VS Code
+    "dbaeumer.vscode-eslint", // ESLint
+    "stylelint.vscode-stylelint", // Stylelint
+    "esbenp.prettier-vscode", // Prettier - Code formatter
+    "vue.volar", // Vue Language Features (Volar)
+    "christian-kohler.path-intellisense", // Path Intellisense
+    "mrmlnc.vscode-less", // Less IntelliSense
+    "antfu.iconify", // Iconify IntelliSense
+    "lokalise.i18n-ally", // i18n Ally
+    "heybourn.headwind", // Headwind
+    "donjayamanne.githistory", // Git History
+    "mikestead.dotenv", // DotENV
+    "shd101wyy.markdown-preview-enhanced", // Markdown Preview Enhanced
+    "kisstkondoros.vscode-gutter-preview", // Image preview
+    "cssho.vscode-svgviewer", // SVG Viewer
+    "dotjoshjohnson.xml", // XML Tools
+    "ms-ceintl.vscode-language-pack-zh-hans", // Chinese (Simplified),
+    "bierner.emojisense" // :emojisense:
+  ]
 }
