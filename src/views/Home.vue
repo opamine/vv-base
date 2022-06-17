@@ -25,7 +25,7 @@
       class="mySwiper"
     >
       <swiper-slide v-for="item in imgAssetsUrl" :key="item">
-        <img :src="item" style="width: 600px; height: 300px; object-fit: cover" />
+        <img :src="item" style=" object-fit: cover;width: 600px; height: 300px" />
       </swiper-slide>
     </swiper>
   </div>
@@ -43,7 +43,7 @@
 </script>
 <style lang="less" scoped>
   .swiper-container {
-    // overflow: hidden;
+    overflow: hidden;
     margin: 30px auto 0;
 
     :deep(.swiper) {
