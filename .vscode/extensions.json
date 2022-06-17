@@ -3,7 +3,6 @@
     "techer.open-in-browser", // open in browser
     "ritwickdey.liveserver", // Live Server
     "formulahendry.code-runner", // Code Runner
-    "streetsidesoftware.code-spell-checker", // Code Spell Checker
     "editorconfig.editorconfig", // EditorConfig for VS Code
     "dbaeumer.vscode-eslint", // ESLint
     "stylelint.vscode-stylelint", // Stylelint
