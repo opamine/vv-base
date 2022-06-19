@@ -17,10 +17,10 @@
 <style lang="less" scoped>
   .nav {
     padding: 16px 32px;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
     background-color: #24292f;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
 
     a {
       margin: 0 8px;
