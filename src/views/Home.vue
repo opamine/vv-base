@@ -25,7 +25,7 @@
       class="mySwiper"
     >
       <swiper-slide v-for="item in imgAssetsUrl" :key="item">
-        <img :src="item" style=" object-fit: cover;width: 600px; height: 300px" />
+        <img :src="item" style="object-fit: cover; width: 600px; height: 300px" />
       </swiper-slide>
     </swiper>
   </div>
