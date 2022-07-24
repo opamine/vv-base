@@ -1,3 +1,8 @@
+import 'virtual:windi-base.css';
+import 'virtual:windi-components.css';
+import '/@/design/index.less';
+import 'virtual:windi-utilities.css';
+
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import Antd from 'ant-design-vue';

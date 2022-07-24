@@ -1,11 +1,12 @@
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
+import windiCSS from 'vite-plugin-windicss';
 import { configCompressPlugin } from './compression';
 
 export function createVitePlugins(viteEnvVars, isBuild) {
   const { VITE_BUILD_COMPRESS, VITE_BUILD_COMPRESS_DELETE_ORIGIN_FILE } = viteEnvVars;
 
-  const vitePlugins = [vue(), vueJsx()];
+  const vitePlugins = [vue(), vueJsx(), windiCSS()];
 
   // The following plugins only work in the production environment
   if (isBuild) {
